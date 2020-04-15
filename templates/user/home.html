@@ -1,0 +1,369 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>FESSEF</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {% static 'css/fichier.css' %} ">
+
+    <!-- <style>
+        .right {
+          position: absolute;
+          right: 150px;
+          width: 500px;
+          padding: 10px;
+        }
+        </style> -->
+        
+  </head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-haut">
+        <a class="navbar-brand img_nav" href=""><h2><img class="photo_fessef" src="{% static 'img/images/fessef.png' %}" alt="fessef"></h2> <img src="" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home'%}" style="color: rgb(12, 11, 12), 12)">Accueil</a>
+            </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(20, 20, 20);">A propos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgb(8, 8, 8);">
+                S'identifier
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{% url 'login' %}" style="color: rgb(13, 13, 14);">connexion</a>
+                <a class="dropdown-item" href="{% url 'register' %}" style="color: rgb(12, 11, 12);">inscription</a>
+              </div>
+            </li>
+          </ul><br>
+         </div>
+        </nav>
+    </div>
+
+    <div>
+     <center>
+        <h1>LE RÉSEAU DES ASSOCIATIONS </h1> 
+        <p><h2>D’ÉTUDIANTS ET DE DIPLÔMÉS</h2></p> 
+         <p><h4>SÉNÉGALAIS DE FRANCE</h4></p><br>
+         <p><h6 style="color: dimgrey;">Plateforme Vie Etudiante</h6></p>
+         
+         <a href="{% url 'login' %}" class="btn btn-success my-2 my-sm-0 degrade" type="submit" style="background-color: darkviolet;border:none" >Connexion</a>
+         <a href="{% url 'register' %}" class="btn btn-outline my-2 my-sm-0" type="submit" style="color: darkviolet;border-color:darkviolet">Inscription</a>
+        <div>
+            <img class="img_g" src="{% static 'img/images/students.png' %}" alt="Students at school">
+        </div>
+     </center>
+    </div> 
+    <!--Debut des secction pour renseignement etudiant -->
+
+    <div class="container-fluid"  style=" height : 90px; background: linear-gradient(70deg,rgb(153, 152, 231), rgb(187, 153, 192));"></div><br><br><br><br> &nbsp
+    <div class="row">
+        <div class="container col-md-5">
+            <h2 class="blocktext" >Emplois & stages</h2>
+            <div text-align:fa-pull-left>
+            <p class="blocktext" style="color: dimgrey;">
+            
+              Vous devez réaliser votre cv. Mais <br> 
+              avant de vous lancer  la tête <br> 
+              première dans cet exercice périlleux,<br> 
+              veillez à ne pas commettre d'erreurs<br>
+              éliminatoires ! En effet, devant une<br>  
+              pile de  plusieurs  centaines de CV, <br>
+              le recruteur à la  recherche du meilleur <br>
+              candidat n'aurapas d'indulgence ! 
+                
+            </p>
+            <button class="btn btn-success my-2 my-sm-0 blocktext degrade" type="submit" style="background-color:darkviolet; border-color:darkviolet; border:none">Voir plus</button>
+            </div>
+        </div>
+        <div class="col-md-7"><img class="img_student" src="{% static 'img/images/student1.png' %}" alt="Students at school"></div>
+    </div>&nbsp&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp
+<div class="row">
+  <div class="col-md-6"><img class="img_student" src="{% static 'img/images/student2.png' %}"alt="Students at school"></div>
+    <div class="container col-md-6 ">
+        <h2>L'étudiant au cœur de <br> nos projets</h2>
+        <div class="right">
+
+          <p style="color: dimgrey;">
+        
+            Plus de contacts, c’est aussi valable entre <br>
+            les professeurs principaux, les familles, et<br> 
+            les lycéens, mais aussi avec les étudiants<br>
+            et entre les professeurs du supérieur et les<br>
+            professeurs du secondaire...Ce qui est ressorti  <br> 
+            des concertations que nous avons menées cet été <br>
+            c’est notamment l’importance de l’information <br>
+            
+          </p> 
+        </div>
+    </div><br>&nbsp<br>&nbsp<br>&nbsp
+   
+</div>
+
+<!-- Fin de section renseignement etudiant -->
+
+<!-- Debut de section renseignement Entreprise -->
+
+<!-- <div class="container-fluid"  style=" height : 90px; background: linear-gradient(70deg,rgb(153, 152, 231), rgb(187, 153, 192));"></div><br><br><br><br> &nbsp -->
+    <div class="row">
+        <div class="container col-md-5">
+            <h2 class="blocktext" >Entreprises</h2>
+            <div text-align:fa-pull-left>
+            <p class="blocktext" style="color: dimgrey;">
+            
+              Vous devez réaliser votre cv. Mais <br> 
+              avant de vous lancer  la tête <br> 
+              première dans cet exercice périlleux,<br> 
+              veillez à ne pas commettre d'erreurs<br>
+              éliminatoires ! En effet, devant une<br>  
+              pile de  plusieurs  centaines de CV, <br>
+              le recruteur à la  recherche du meilleur <br>
+              candidat n'aurapas d'indulgence ! 
+                
+            </p>
+            <a href="{% url 'register_company'%}" class="btn btn-success my-2 my-sm-0 blocktext degrade" type="submit" style="background-color:darkviolet; border-color:darkviolet; border:none">S'inscrire</a>
+            </div>
+        </div>
+        <div class="col-md-7"><img class="img_student" src="{% static 'img/images/student1.png' %}" alt="Students at school"></div>
+    </div>&nbsp&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp
+<div class="row">
+  <div class="col-md-6"><img class="img_student" src="{% static 'img/images/student2.png' %}"alt="Students at school"></div>
+    <div class="container col-md-6 ">
+        <h2>Vous Etes Association <br> </h2>
+        <div class="right">
+
+          <p style="color: dimgrey;">
+        
+            Plus de contacts, c’est aussi valable entre <br>
+            les professeurs principaux, les familles, et<br> 
+            les lycéens, mais aussi avec les étudiants<br>
+            et entre les professeurs du supérieur et les<br>
+            professeurs du secondaire...Ce qui est ressorti  <br> 
+            des concertations que nous avons menées cet été <br>
+            c’est notamment l’importance de l’information <br>
+            
+          </p> 
+          <a href="{% url 'register_clube'%}" class="btn btn-success my-2 my-sm-0 blocktext degrade" type="submit" style="background-color:darkviolet; border-color:darkviolet; border:none">S'inscrire</a>
+        </div>
+    </div><br>&nbsp<br>&nbsp<br>&nbsp
+   
+</div>
+
+<!-- Fin de section renseignement Entreprise -->
+
+
+    <center>
+      <div>
+        <h1>Quelles sont nos <br> activitées ?</h1>
+      </div>
+    </center><br><br>
+
+<center>
+<div class="row">
+                  <div class="col-md-4">
+                    <img src=" {% static 'img/images/vie_etudiante.png' %}" alt="vie etudiante">
+                    <h4>Vie étudiante</h4>             
+                    <p style="color: dimgrey;">
+                  
+                    Ah ! Quelle belle période que la vie étudiante, la <br> 
+                    faculté, les sorties ! Le statut étudiant est quelque <br> 
+                    fois handicapant mais il offre certains avantages.
+                      
+                      </p> 
+                    </div>
+                 
+                  <div class="col-md-4">
+                    <img src="{% static 'img/images/insertion_professionnelle.png' %}"  alt="insertion professionnelle">
+                        <h4>Insertion professionnelle</h4>
+                            <p style="color: dimgrey;">
+                          
+                              L'insertion sociale et professionnelle désigne  <br> 
+                              le processus permettant l'intégration d'une  <br>   
+                              personne au sein du système socio-économique.  <br> 
+                    
+                            </p>
+                   </div>
+               
+                    <div class="col-md-4">
+                      <img class="img_partenariat" src="{% static 'img/images/partenariat_communication.png' %}"   alt="partenariat et communication">
+                          <h4>Partenariats & communication</h4>
+                          <p style="color: dimgrey;">
+                           
+                            Le partenariat média offre bien souvent des <br> 
+                            apports publicitaires dans une stratégie de<br> 
+                            communication. 
+                          
+                            </p>
+                    </div>
+                 
+</div><br><br> <br><center> <div style="color: darkgrey;"><h1 style="color: dimgray;"><- &nbsp -></h1></div></center> <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</center>
+
+              
+
+                <center>
+                 
+                  <h1>Associations membres</h1>
+                  <p style="color: dimgrey;">Les associations membres d’ELSA développent chacune leurs propres programmes <br> d’appui aux associations africaines, en fonction de leurs spécificités.</p>
+                </center><br><br>
+<center>
+<div class="row">
+  <div class="col-md-4">
+    <h1>+5000</h1>
+    <p><h4 style="color: rgb(146, 125, 156);">Membres</h4></p>
+    <p style="color: gray;">Devenir membre d’une association, <br>
+      c’est bénéficier de certains droits .<br></p>
+     <p style="color: forestgreen;">Voir plus</p>
+  </div>
+    <div class="col-md-4">
+      <h1>+3000</h1>
+      <p><h4 style="color: rgb(146, 125, 156);">Etudiants coachés</h4></p>
+      <p style="color: gray;">Devenir membre d’une association, <br>
+        c’est bénéficier de certains droits .<br></p>
+       <p style="color: forestgreen;">Voir plus</p>
+    </div>
+      <div class="col-md-4">
+        <h1>0010</h1>
+        <p><h4 style="color: rgb(146, 125, 156);">Années expériences</h4></p>
+        <p style="color: gray;">Devenir membre d’une association, <br>
+          c’est bénéficier de certains droits .<br></p>
+         <p style="color: forestgreen;">Voir plus</p>
+      </div>
+</div><br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>
+</center>
+
+  <div class="container-fluid petitfond" style=" background-image:url({% static 'img/images/fond.png'%}) ">
+    <div class="row">
+      <div class="col-md-6 m-auto">
+        <h3>Un quelconque</h3>
+        <h1>problème?</h1>&nbsp<br>&nbsp<br>&nbsp
+        <form style="background-color: antiquewhite;" method="POST">
+              <div class="form-group ">
+                <label class="">Nom</label>
+                <input type="text" class="form-control" placeholder="Mbengue">
+              </div>
+              <div class="form-group ">
+                <label class="">Prénom</label>
+                <input type="text" class="form-control" placeholder="Mame diarra">
+              </div>
+              <div class="form-group ">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group ">
+                <label >Quels genres de problèmes rencontrez-vous ?</label>
+                <input type="text" class="form-control" placeholder="Bourse" >
+              </div>
+              <div class="form-group ">
+                <label >Tape ton message</label>
+                <input type="text" class="form-control" placeholder="aidez moi sur mes projets" >
+              </div>
+             <button class="btn btn-success my-2 my-sm-0 degrade"  style="background-color: darkviolet; border:none">envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>    
+        <!--<center>-->
+          
+
+
+              <!--</center>-->
+        </div><br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>
+        <img class="img_fessef" src="{% static 'img/images/fessef.png' %}" alt="fessef">&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>
+             
+            
+        <div class="row">
+              <div class="col-md-4">
+                <h6 class="blog_text">Contactez nous sur :</h6>
+                <p class="blog_text" style="color: rgb(122, 113, 113);">
+                  33-854-03-33 <br>
+                  77-569-23-85 <br>
+                  communication@fessef.com <br>
+                  fessef.france@gmail.com
+                </p>
+              </div>
+              <div class="col-md-2">
+                <h6 class="blog_text">Compagnie</h6>
+                <p class="blog_text" style="color: rgb(122, 113, 113);">
+                    Apropos <br>
+                    Actualité <br>
+                    blog
+                </p>
+              </div>
+              <div class="col-md-2">
+                <h6 class="blog_text">Réseaux sociaux</h6>
+                <p class="blog_text" style="color: rgb(122, 113, 113);">
+                  facebook <br>
+                  youtube <br>linkedin <br> skype
+
+                </p>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="blog_text">Adresse</h6>
+                  <p class="blog_text" style="color: rgb(122, 113, 113);">
+                  Paris, 8 Rue place de la République
+                  </p><br> 
+                  <p class="blog_text"><h6 class="blog_text">Suivez nous sur :</h6></p>
+                  <p>
+        <!-- Footer Elements -->
+        <div class="container">
+
+          <!-- Social buttons -->
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-fb mx-1">
+                <img class="img_sociaux" src="{% static 'img/images/face.png' %}" alt="facebook">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-tw mx-1">
+                <img class="img_sociaux" src="{% static 'img/images/skype.png' %}" alt="skype">
+              </a>
+            </li>
+                                        
+            <li class="list-inline-item">
+              <a class="btn-floating btn-tw mx-1">
+                <img class="img_sociaux" src="{% static 'img/images/linke.png' %}" alt="linkedin">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-tw mx-1">
+                <img class="img_sociaux" src="{% static 'img/images/insta.png' %}" alt="instagram">
+              </a>
+            </li>
+          </ul>
+          <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+      </footer>
+      <!-- Footer -->
+
+      </p>
+      </div>
+      </div><!--<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>-->
+       
+
+
+             
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

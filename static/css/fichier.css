@@ -1,0 +1,40 @@
+
+.img_student{
+    width: 600px;
+}
+
+.img_partenariat{
+    width: 210px
+}
+
+.img_fessef{
+margin-left: 500px ;
+margin-right: 500px;
+}
+.blocktext{
+    margin-left: 100px;
+}
+.blog_text{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.degrade{
+    background: linear-gradient(70deg,rgb(153, 152, 231), rgb(187, 153, 192));
+    width: 200px;
+   
+    
+}
+}
+.photo_fessef{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.img_sociaux{
+    width: 40px;
+    length: 40px;
+}
+
+.body{
+    background: rgb(246, 240, 240) url({% static 'img/profile_pics/images/image5.jpg' %}) no-repeat;
+}

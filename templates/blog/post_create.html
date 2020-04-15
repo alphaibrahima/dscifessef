@@ -1,0 +1,95 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSci - Fessef</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontastic.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="{% static 'vendor/@fancyapps/fancybox/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.default.css' %}" id="theme-stylesheet">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+    
+    <link href='{% static "styles/github.css" %}' rel="stylesheet">
+</head>
+<body>
+ <header class="header">
+        <!-- Main Navbar-->
+        <nav class="navbar navbar-expand-lg">
+          <div class="search-area">
+            <div class="search-area-inner d-flex align-items-center justify-content-center">
+              <div class="close-btn"><i class="icon-close"></i></div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="search" name="search" id="search" placeholder="What are you looking for?">
+                      <button type="submit" class="submit"><i class="icon-search-1"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <!-- Navbar Brand -->
+            <div class="navbar-header d-flex align-items-center justify-content-between">
+              <!-- Navbar Brand --><a href="{% url 'posts' %}" class="navbar-brand">DSci - Fessef</a>
+              <!-- Toggle Button-->
+              <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+            </div>
+            <!-- Navbar Menu -->
+            <div id="navbarcollapse" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link active ">Dashbord</a>
+                </li>
+                <li class="nav-item"><a href="{% url 'posts' %}" class="nav-link active ">Accueil</a>
+                </li>
+                <li class="nav-item"><a href="{% url 'create' %}" class="nav-link active ">Publier</a>
+                </li>
+                {% if request.user.is_authenticated %}
+                <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link active">Se deconnecter</a>
+                </li>
+                {% else %}
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link active">Se connecter</a> 
+                {% endif %}
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+</header>
+
+<div class="col-4 offset-4 mb-5 mt-5">
+    <h2> {{title}} Article</h2>
+    <form method="POST" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-primary" type="submit">Publier</button>
+    </form>
+    
+    </div>
+
+<!-- JavaScript files-->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/popper.js/umd/popper.min.js' %}"> </script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
+<script src="{% static 'vendor/@fancyapps/fancybox/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'js/front.js' %}"></script>
+
+<script src='{% static "js/highlight.pack.js" %}'></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

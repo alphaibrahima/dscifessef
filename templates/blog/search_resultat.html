@@ -1,0 +1,9 @@
+{% extends "pageBase.html" %}
+{% load static %}
+{% block content %}
+
+<h2>Resultat</h2>
+{% for post in queryset %}
+    <a href="{{ post.get_absolute_url }}">{{post.username}}</a>
+{% endfor%}
+{% endblock %}
